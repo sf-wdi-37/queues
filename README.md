@@ -1,9 +1,46 @@
+<!--
+Creator: Team, editing by Cory
+Market: SF
+-->
 
-##Queues
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+# Data Structures: Stacks and Queues
+
+
+### Why is this important?
+<!-- framing the "why" in big-picture/real world examples -->
+*This workshop is important because:*
+
+Data structures are ways of organizing data that mimic real-world data movement. A queue is built to simulate any situation where people, tasks, or items get in a line and are addressed one by one in the order they arrived. They are addressed in a first in, first out basis. This is important because it's extremely common in the real world.
+
+### What are the objectives?
+<!-- specific/measurable goal for students to achieve -->
+*After this workshop, developers will be able to:*
+
+- Describe a queue by its methods and first in, first out (FIFO) behavior.
+- Build queue methods using linked list methods.
+- Compare and contrast stacks and queues and appropriately choose which is better for a given situation.
+
+### Where should we be now?
+<!-- call out the skills that are prerequisites -->
+*Before this workshop, developers should already be able to:*
+
+- Describe a stack and build its methods
+- Write a Ruby class.
+
+
+## Warmup
+
+1. What is a stack and what behaviors does it have?
+1. Why were we using playing cards during the stacks lesson?
+1. How would you implement a stack **with an array** (rather than a linked list)? Where would you decide where the top of the stack would be? How would you `push` something to top of the stack? How would you `pop` something off the top of the stack?
+
+## Queues
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/2000px-Data_Queue.svg.png" width="400px" alt="queue image with enqueue and dequeue">
 
+You can read about them below or watch [this video](https://www.youtube.com/watch?v=6QS_Cup1YoI)
 
 Queues as a data structure are a lot like queues as a physical structure. This makes more sense with British English, where *queue* means "a line" or "to line up". Think of an orderly line of people waiting to do something. We can remove an item from the front of the queue when its turn comes (by `pop`ing, also known as `dequeue`ing), or add an item to the back of the queue when it joins the line (by `push`ing or `enqueue`ing it). Again, while we may be able to "cut" in line in the real world, the queue data structure only allows us to add to the end of the stack or remove from the beginning.  The `enqueue` and `dequeue` operations for a queue are both O(1) - constant time.  Like with stacks, some implementations of queues also allow us to `peek` at the value of the first item without `dequeue`ing it.
 

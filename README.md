@@ -5,7 +5,7 @@ Market: SF
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-# Data Structures: Stacks and Queues
+# Data Structures: Queues
 
 
 ### Why is this important?
@@ -95,6 +95,19 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
 
 
 ## Challenges
+
+
+
+1. **Design Decisions**
+  Would you use a stack or a queue to...
+
+  * ... print out a list of instructions that must be done in order?
+
+  * ... allow a user to undo changes to a document, one by one?
+
+  * ... let users create playlists and play back the songs?
+
+  * ... display *only* the 10 most recent messages a user posted, in the order they were posted?
 
 
 1. **Message Queues**

@@ -118,4 +118,4 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
 
  Describe how you would use a queue help the chef keep track of meals to make.  What should the chef do when the queue is empty?
 
-1. **Stretch:** Try out [this queue challenge](queues-challenge.md) to calculate the total price of a purchase.
+1. **Stretch:** Try out [this queue challenge](challenge.md) to calculate the total price of a purchase.

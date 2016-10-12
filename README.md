@@ -34,13 +34,13 @@ Data structures are ways of organizing data that mimic real-world data movement.
 
 1. What is a stack and what behaviors does it have?
 1. Why were we using playing cards during the stacks lesson?
-1. How would you implement a stack **with an array** (rather than a linked list)? Where would you decide where the top of the stack would be? How would you `push` something to top of the stack? How would you `pop` something off the top of the stack?
+1. How would you implement a stack **with an array** (rather than a linked list)? How would you decide where the top of the stack would be? How would you `push` something to top of the stack? How would you `pop` something off the top of the stack?
 
 ## Queues
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/2000px-Data_Queue.svg.png" width="400px" alt="queue image with enqueue and dequeue">
 
-You can read about them below or watch [this video](https://www.youtube.com/watch?v=6QS_Cup1YoI)
+You can read about them below or watch [this video](https://www.youtube.com/watch?v=6QS_Cup1YoI).
 
 Queues as a data structure are a lot like queues as a physical structure. This makes more sense with British English, where *queue* means "a line" or "to line up". Think of an orderly line of people waiting to do something. We can remove an item from the front of the queue when its turn comes (by `pop`ing, also known as `dequeue`ing), or add an item to the back of the queue when it joins the line (by `push`ing or `enqueue`ing it). Again, while we may be able to "cut" in line in the real world, the queue data structure only allows us to add to the end of the stack or remove from the beginning.  The `enqueue` and `dequeue` operations for a queue are both O(1) - constant time.  Like with stacks, some implementations of queues also allow us to `peek` at the value of the first item without `dequeue`ing it.
 

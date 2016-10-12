@@ -14,15 +14,15 @@ Your program should take in a queue of items, each of which has a name and a pri
 
 Example
 
-```js
-var q = [
-  { name: 'banana',  price: .29 },
+```ruby
+q = [
+  { name: 'banana',  price: 0.29 },
   { name: 'smoothie', price: 4.00 },
   { name: 'car', price: 10000 }
-];
+]
 
-var total = calculateTotal(itemQueue);
-// total is 9004.29
+total = calculateTotal(q);
+# total is 9004.29
 ```
 
 <details><summary>Hint: an array can be a queue -- what array methods would you use for your `enqueue` and `dequeue`, respectively?</summary>If index 0 is the front of your queue, `push` and `shift`.  If the end of the array is the front of your queue, `unshift` and `pop`!</details>

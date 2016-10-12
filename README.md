@@ -12,7 +12,7 @@ Market: SF
 <!-- framing the "why" in big-picture/real world examples -->
 *This workshop is important because:*
 
-Data structures are ways of organizing data that mimic real-world data movement. A queue is built to simulate any situation where people, tasks, or items get in a line and are addressed one by one in the order they arrived. They are addressed in a first in, first out basis. This is important because it's extremely common in the real world.
+Data structures are ways of organizing data that model real-world information movement. A queue is built to simulate any situation where people, tasks, or items get in a line and are addressed one by one in the order they arrived; items are addressed in a first in, first out basis. This is important because it's extremely common in the real world.
 
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
@@ -50,6 +50,8 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
 
 ### Thinking with Queues
 
+1. What are some real life structures and objects that a queue could simulate?
+
 1.  Draw a queue after each of the following operations:
 
   * ENQUEUE 0
@@ -85,7 +87,7 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
 1. How would you implement a queue **with a linked list**? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
 
  <details><summary>super stuck? click for an answer...</summary>
- > You'd need to store the tail.  The "front" could be the head of the linked list. The "back" could be the tail.  You could enqueue by `append`ing to the tail.  You could dequeue by deleting and returning the head node.
+ > The "front" could be the head of the linked list. The "back" could be the tail. You could enqueue by `append`ing to the tail. You could dequeue by deleting and returning the head node.
  </details>
 
 1. **Stretch:** How would you implement a queue with a fixed-size array?
@@ -99,7 +101,7 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
 
  Queues are often used to create "buffers" that temporarily store data from one part of a program until another part of a program can process the data. This is common with asynchronous data transfer, or mismatches between how often data is sent and how often it can be processed.
 
- We'll think of a scenario where restaurant diners order food faster than the chefs can cook it.  
+ Think of a scenario where restaurant diners order food faster than the chefs can cook it.  
 
  Describe how you would use a queue help the chef keep track of meals to make.  What should the chef do when the queue is empty?
 

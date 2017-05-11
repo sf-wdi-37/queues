@@ -14,19 +14,17 @@
 function calculateTotal(itemQueue){
   var total = 0;
   var count = 1;
-  var firstItem = itemQueue.shift();
+  var firstItem = itemQueue.dequeue();
   while (firstItem !== undefined){
-    if (count % 15 === 0){
-      total += firstItem.price * 0.7;
-    } else if (count % 5 === 0){
-      total += firstItem.price * 0.8;
-    } else if (count % 3 === 0){
-      total += firstItem.price * 0.9;
-    } else {
-      total += firstItem.price;
+    if (count % 5 === 0){
+      total -= firstItem.price * 0.2;
     }
+    if (count % 3 === 0){
+      total -= firstItem.price * 0.1;
+    } 
+    total += firstItem.price;
     count++;
-    firstItem = itemQueue.shift();
+    firstItem = itemQueue.dequeue();
   }
   return total;
 }

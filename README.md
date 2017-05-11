@@ -19,22 +19,20 @@ Data structures are ways of organizing data that model real-world information mo
 *After this workshop, developers will be able to:*
 
 - Describe a queue by its methods and first in, first out (FIFO) behavior.
-- Build queue methods using linked list methods.
+- Build queue methods using linked list or array methods.
 - Compare and contrast stacks and queues and appropriately choose which is better for a given situation.
 
 ### Where should we be now?
 <!-- call out the skills that are prerequisites -->
 *Before this workshop, developers should already be able to:*
 
-- Describe a stack and build its methods
-- Write a Ruby class.
+- Describe arrays, linked lists, and stacks.
 
 
 ## Warmup
 
-1. What is a stack and what behaviors does it have?
-1. Why were we using playing cards during the stacks lesson?
-1. How would you implement a stack **with an array** (rather than a linked list)? How would you decide where the top of the stack would be? How would you `push` something to top of the stack? How would you `pop` something off the top of the stack?
+1. What is a stack, and what behaviors does it have?
+2. How would you implement a stack **with an array** and **with a linked list**? How would you decide where the top of the stack would be? How would you `push` something to top of the stack? How would you `pop` something off the top of the stack?
 
 ## Queues
 
@@ -52,7 +50,7 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
 
 1. What are some real life structures and objects that a queue could simulate?
 
-1.  Draw a queue after each of the following operations:
+2.  Draw a queue after each of the following operations:
 
   * ENQUEUE 0
   * DEQUEUE
@@ -63,28 +61,28 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
   * ENQUEUE 8
 
   <details><summary>click for answer...</summary>
-    ```
-    * start        []
-    * ENQUEUE 0    [0]
-    * DEQUEUE      []
-    * ENQUEUE 2    [2]
-    * ENQUEUE 4    [2, 4]
-    * ENQUEUE 6    [2, 4, 6]
-    * DEQUEUE      [4, 6]
-    * ENQUEUE 8    [4, 6, 8]
-    ```
+
+      * start        []
+      * ENQUEUE 0    [0]
+      * DEQUEUE      []
+      * ENQUEUE 2    [2]
+      * ENQUEUE 4    [2, 4]
+      * ENQUEUE 6    [2, 4, 6]
+      * DEQUEUE      [4, 6]
+      * ENQUEUE 8    [4, 6, 8]
+
   </details>
 
 
 
-1. How would you implement a queue **with an array**? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
+2. How would you implement a queue **with an array**? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
 
  <details><summary>super stuck? click for an answer...</summary>
  > The "front" could be the beginning of the array.  To enqueue, you'd use JavaScript's handy `push` array method. To dequeue, you could use JavaScript's `shift` method, which removes and returns the first element from an array.
  </details>
 
 
-1. How would you implement a queue **with a linked list**? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
+3. How would you implement a queue **with a linked list**? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
 
  <details><summary>super stuck? click for an answer...</summary>
  > The "front" could be the head of the linked list. The "back" could be the tail. You could enqueue by `append`ing to the tail. You could dequeue by deleting and returning the head node.
@@ -110,7 +108,7 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
   * ... display *only* the 10 most recent messages a user posted, in the order they were posted?
 
 
-1. **Message Queues**
+2. **Message Queues**
 
  Queues are often used to create "buffers" that temporarily store data from one part of a program until another part of a program can process the data. This is common with asynchronous data transfer, or mismatches between how often data is sent and how often it can be processed.
 
@@ -118,4 +116,4 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
 
  Describe how you would use a queue help the chef keep track of meals to make.  What should the chef do when the queue is empty?
 
-1. **Stretch:** Try out [this queue challenge](challenge.md) to calculate the total price of a purchase.
+3. **Stretch:** Try out [this queue challenge](challenge.md) to calculate the total price of a purchase.
